@@ -1,0 +1,36 @@
+body{
+    padding-top: 30px;
+    font-family: cursive;
+}
+.detail h1{
+    text-align: center;
+    padding-top: 10px;
+}
+.detail h3{
+    text-align: center;
+    font-weight: bold;
+}
+
+.self-bio{
+    padding-top: 10%;
+    padding-left: 10%;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Merienda', cursive;
+    font-size: 20px;
+    color: black;
+}
+
+.rightposition{
+    display: inline-block;
+    display: flex;
+    width: 84%;
+    margin: auto;
+    /* padding: 20px 0; */
+    align-items: center;
+    justify-content: end;
+
+}
+.container {
+  overflow: auto;
+}

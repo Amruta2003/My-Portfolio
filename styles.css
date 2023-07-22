@@ -1,0 +1,112 @@
+/* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: cursive;
+}
+.bg{
+background-image: url('file:///D:/Projects/New%20folder/images/background.png');
+  background-size: cover;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px;
+    color: black;
+    width: 84%;
+    margin: auto;
+
+}
+
+.nav-links a {
+    color: black;
+}
+
+/* LOGO */
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 45px;
+    padding-left: 5%;
+}
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu li a:hover {
+    color: rgb(193, 21, 130);
+    
+    
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+/* RESPONSIVE NAVBAR MENU STARTS */
+
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
+    display: none;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        right: 0;
+        left: 0;
+        text-align: right;
+        
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .dropdown {
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%);
+    }
+
+
+}
